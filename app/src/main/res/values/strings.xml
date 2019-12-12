@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">E Portering System</string>
+    <!--Activity Title-->
+    <string name="hospital_porter_management_system">E Portering System</string>
+    <string name="admission">Admission</string>
+    <string name="adhoc">Ad Hoc</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="porter_list">Porter List</string>
+    <string name="job_list">Job List</string>
+    <string name="job_detail">Job Detail</string>
+    <string name="job_queue">Job Queue</string>
+    <string name="assign_porter">Assign porter</string>
+    <string name="ongoing_job">Ongoing Job</string>
+    <string name="job_report">Job Report</string>
+    <string name="edit_job">Edit Job</string>
+    <string name="login">Login</string>
+    <string name="job_history">Job History</string>
+    <string name="createJob">Create Job</string>
+    <string name="staff_mgmt">Staff Management</string>
+    <string name="edit_staff">Edit Staff</string>
+    <string name="new_staff">New Staff</string>
+    <!--MenuItem-->
+    <string name="log_out">Log out</string>
+    <string name="history">Job History</string>
+
+    <!--Dialog-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="job_confirmation">Job Confirmation</string>
+
+    <!--Others-->
+    <string name="created_time">Created</string>
+    <string name="acknowledge_time">Acknowledged</string>
+    <string name="start_time">Reached start point</string>
+    <string name="pick_up">Picked Up</string>
+    <string name="arrival">Arrived at destination </string>
+    <string name="complete_time">Completed</string>
+    <string name="created_by">Created By </string>
+    <string name="assigned_to">Assigned To</string>
+    <string name="remark">Additional Remark</string>
+    <string name="job_type">Job Type</string>
+    <string name="case_id">Case ID</string>
+    <string name="description">Description</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="type_of_job">Type of Job</string>
+    <string name="urgency_level">Urgency Level</string>
+    <string name="reset_all">Reset All</string>
+    <string name="availability">Porter Availability</string>
+    <string name="job_available">Job Available</string>
+    <string name="total_job">Total Jobs</string>
+    <string name="from_location">From Location</string>
+    <string name="to_location">To Location</string>
+    <string name="staff_id">Staff ID</string>
+    <string name="scan">Scan</string>
+    <string name="status">Status</string>
+    <string name="number_of_jobs">No. of jobs</string>
+    <string name="kpi">KPI %</string>
+    <string name="number_of_available_porter">Number Of Available Porter:</string>
+    <string name="export">Export</string>
+    <string name="nurseID">Department Staff ID</string>
+    <string name="chooseFrom">Or… choose from here</string>
+    <string name="jobUrgency">Job Urgency</string>
+    <string name="staffName">Staff Name</string>
+    <string name="staffRole">Staff Role</string>
+    <string name="staffEmail">Staff Email</string>
+    <string name="gender">Gender</string>
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="staffContact">Staff Contact</string>
+
+
+    <!--Message-->
+    <string name="meetKPI">Well done! You have completed the job within the KPI time limit </string>
+    <string name="noMeetKPI">You have done your best! Enter your reason at the bottom so we can know the reason! </string>
+    <string name="cancelledReason">Cancelling job? Tell us your reason for cancelling the job!</string>
+    <string name="identifier">Identifier</string>
+
+    <!--Error or success Message -->
+    <string name="cannotEmpty">Staff ID cannot be empty</string>
+    <string name="anotherDevice">Already logged in another device</string>
+    <string name="loginSuccess">Login Success</string>
+    <string name="locationNull">Please select a location</string>
+    <string name="notValidLocation">Please select a valid location</string>
+    <string name="addSuccess">Porter job added successfully</string>
+    <string name="addUserSuccess">User added successfully</string>
+    <string name="dataNotSaved">Data could not be saved</string>
+    <string name="dataSaved">Data saved successfully</string>
+    <string name="sameLocation">From and to location cannot be same</string>
+    <string name="reportDownloaded">Report has been downloaded</string>
+    <string name="remarkCompulsory">Please input or select remark</string>
+    <string name="nurseIDCompulsory">Please input Nurse ID</string>
+    <string name="jobNull">Please select a type of job</string>
+    <string name="urgencyNull">Please select an urgency level</string>
+    <string name="invalidUser">Invalid Staff ID</string>
+    <string name="caseIDnull">CaseID must not be null</string>
+    <string name="errorDefault">You have yet to enter the correct detail</string>
+
+    <!--Dashboard-->
+    <string name="pending_job">Pending Job</string>
+    <string name="queue_job">Job in queue:</string>
+
+    <!--Empty String or Object Message-->
+    <string name="empty">-</string>
+    <string name="no_job">No job</string>
+    <string name="no_ongoing_job">No ongoing job</string>
+    <string name="no_queue_job">No queue job</string>
+    <string name="no_report">No report for this month yet</string>
+    <string name="zero">0</string>
+
+    <!--Urgency Radio Button-->
+    <string name="normal">Normal</string>
+    <string name="urgent">Urgent</string>
+    <string name="emergency">Emergency</string>
+
+    <!--Job Type-->
+    <string name="xray">X-Ray</string>
+    <string name="lab">Lab</string>
+    <string name="discharge">Discharge</string>
+    <string name="document">Document</string>
+    <string name="transport">Transport</string>
+    <string name="inpatient">Inpatient</string>
+    <string name="outpatient">Day Surgery</string>
+    <string name="maternity">Maternity</string>
+
+    <!--Hint-->
+    <string name="hint_remarks">(Optional)</string>
+    <string name="hint_must">Enter remark</string>
+    <string name="hint_case_id">Enter Case ID</string>
+    <string name="hint_staff_id">Enter Staff ID</string>
+    <string name="hint_nurse_id">Enter Nurse ID</string>
+    <string name="hint_staff_name">Enter Staff Name</string>
+    <string name="hint_staff_email">Enter Staff Email</string>
+    <string name="hint_staff_contact">Enter Staff Contact</string>
+    <string name="hint_bed_ward">E.g. I190000203 / Room 3, Bed 4</string>
+
+    <!--Button-->
+    <string name="button_start_job">Start Job</string>
+    <string name="button_complete_job">Complete Job</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="create">Create</string>
+    <string name="back_home">Back to Home</string>
+    <string name="next">Next</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="patientNotReady">Patient not ready</string>
+    <string name="nurseNotReady">Nurse not ready</string>
+    <string name="addJob">Add Job</string>
+    <string name="addStaff">Add Staff</string>
+
+    <!--Month-->
+    <string name="jan">JANUARY</string>
+    <string name="feb">FEBRUARY</string>
+    <string name="mar">MARCH</string>
+    <string name="apr">APRIL</string>
+    <string name="may">MAY</string>
+    <string name="jun">JUNE</string>
+    <string name="jul">JULY</string>
+    <string name="aug">AUGUST</string>
+    <string name="sept">SEPTEMBER</string>
+    <string name="oct">OCTOBER</string>
+    <string name="nov">NOVEMBER</string>
+    <string name="dec">DECEMBER</string>
+
+</resources>

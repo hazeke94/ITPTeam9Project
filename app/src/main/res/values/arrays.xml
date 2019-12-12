@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinnerItems">
+        <item>X-Ray</item>
+        <item>Labs</item>
+        <item>Discharge</item>
+        <item>Document</item>
+        <item>Transport</item>
+    </string-array>
+
+    <string-array name="AdmissionItems">
+        <item>Inpatient</item>
+        <item>Day Surgery</item>
+        <item>Maternity</item>
+    </string-array>
+
+    <string-array name="AllItems">
+        <item>X-Ray</item>
+        <item>Labs</item>
+        <item>Discharge</item>
+        <item>Document</item>
+        <item>Transport</item>
+        <item>Inpatient</item>
+        <item>Day Surgery</item>
+        <item>Maternity</item>
+    </string-array>
+
+    <string-array name="SortAllItems">
+        <item>All Jobs</item>
+        <item>X-Ray</item>
+        <item>Labs</item>
+        <item>Discharge</item>
+        <item>Document</item>
+        <item>Transport</item>
+        <item>Inpatient</item>
+        <item>Day Surgery</item>
+        <item>Maternity</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>All Months</item>
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string-array name="reportMonth">
+        <item>JANUARY</item>
+        <item>FEBRUARY</item>
+        <item>MARCH</item>
+        <item>APRIL</item>
+        <item>MAY</item>
+        <item>JUNE</item>
+        <item>JULY</item>
+        <item>AUGUST</item>
+        <item>SEPTEMBER</item>
+        <item>OCTOBER</item>
+        <item>NOVEMBER</item>
+        <item>DECEMBER</item>
+    </string-array>
+
+</resources>

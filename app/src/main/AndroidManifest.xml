@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.portermanagementsystem">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.StaffActivity"></activity>
+        <activity android:name=".Activity.StaffDetailActivity" android:label="@string/edit_staff"  />
+        <activity android:name=".Activity.StaffListActivity" android:label="@string/staff_mgmt" />
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.CreateUserActivity" android:label="@string/new_staff" />
+        <activity android:name=".Activity.Scanner.BarcodeJobActivity" />
+        <activity android:name=".Activity.Scanner.ScannerJobActivity" />
+        <activity android:name=".Activity.Scanner.NurseScannerActivity" />
+        <activity android:name=".Activity.Scanner.LoginScannerActivity" />
+        <activity android:name=".Activity.Scanner.StaffIDScannerActivity" />
+        <activity
+            android:name=".Activity.CreateJob.CreateJob1Activity"
+            android:label="@string/createJob" />
+        <activity
+            android:name=".Activity.CreateJob.CreateJob2Activity"
+            android:label="@string/createJob" />
+        <activity
+            android:name=".Activity.CreateJob.CreateJobFinalActivity"
+            android:label="@string/createJob" />
+        <activity
+            android:name=".Activity.Dashboard.ReceptionistDashboardActivity"
+            android:label="@string/dashboard" />
+        <activity
+            android:name=".Activity.PorterAvailabilityActivity"
+            android:label="@string/porter_list" />
+        <activity
+            android:name=".Activity.Dashboard.PorterDashboardActivity"
+            android:label="@string/dashboard" />
+        <activity
+            android:name=".Activity.AssignPorterActivity"
+            android:label="@string/assign_porter" />
+        <activity
+            android:name=".Activity.JobDetailActivity"
+            android:label="@string/job_detail" />
+        <activity
+            android:name=".Activity.JobOngoingActivity"
+            android:label="@string/ongoing_job" />
+        <activity
+            android:name=".Activity.JobQueueActivity"
+            android:label="@string/job_queue" />
+        <activity
+            android:name=".Activity.EditJobDetailActivity"
+            android:label="@string/edit_job" />
+        <activity
+            android:name=".Activity.JobReportActivity"
+            android:label="@string/job_report" />
+        <activity
+            android:name=".Activity.RemarkActivity"
+            android:label="@string/remark" />
+        <activity
+            android:name=".Activity.KpiReportActivity"
+            android:label="@string/job_report" />
+        <activity
+            android:name=".Activity.JobHistoryActivity"
+            android:label="@string/job_history" />
+
+        <service
+            android:name=".Notification.NotificationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name=".Util.GenericFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

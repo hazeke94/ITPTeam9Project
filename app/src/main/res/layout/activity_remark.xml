@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_35"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="35dp">
+
+        <ImageView
+            android:id="@+id/imageViewSign"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/MessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_space"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nurseIDTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:text="@string/nurseID"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNurseID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_space"
+            android:drawableRight="@drawable/ic_photo_camera_black_24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:text="@string/remark"
+            android:textSize="@dimen/font_1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_remarks"
+            android:onClick="removeCheck"
+            android:textSize="18sp"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:id="@+id/addRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:layout_marginTop="@dimen/layout_5"
+            android:layout_marginBottom="@dimen/layout_5"
+            android:text="@string/chooseFrom"
+            android:textSize="@dimen/impt_font" />
+
+        <Button
+            android:id="@+id/patientNoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="updatePatientNotReady"
+            android:text="@string/patientNotReady" />
+
+        <Button
+            android:id="@+id/nurseNoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="updateNurseNotReady"
+            android:text="@string/nurseNotReady" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_15"
+            android:backgroundTint="@color/bluish"
+            android:onClick="updateRemark"
+            android:text="@string/submit"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

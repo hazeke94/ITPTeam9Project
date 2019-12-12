@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_15"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_15"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="@dimen/layout_70"
+                            android:layout_height="@dimen/layout_70"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/ic_lens_black_24dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_detail"
+                        android:textSize="@dimen/textPrestige" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_70"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <ImageView
+                            android:layout_width="@dimen/layout_70"
+                            android:layout_height="@dimen/layout_70"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/ic_lens_black_24dp" />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/job_type"
+                        android:textSize="@dimen/textPrestige" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <ImageView
+                            android:layout_width="@dimen/layout_70"
+                            android:layout_height="@dimen/layout_70"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/ic_lens_yellow_24dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/jobUrgency"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/textTitle"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroupJobUrgency"
+                android:layout_width="373dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textUser"
+                android:checkedButton="@+id/sound"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.708">
+
+                <TextView
+                    android:id="@+id/textViewUrgencyLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_4"
+                    android:layout_marginBottom="@dimen/layout_4"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/urgency_level"
+                    android:textSize="@dimen/textTitle" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonEmergency"
+                    android:layout_width="@dimen/layout_157"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emergency"
+                    android:textSize="18sp"
+                    android:theme="@style/CustomRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonUrgent"
+                    android:layout_width="@dimen/layout_157"
+                    android:layout_height="wrap_content"
+                    android:text="@string/urgent"
+                    android:textSize="18sp"
+                    android:theme="@style/CustomRadioButton2" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNormal"
+                    android:layout_width="@dimen/layout_157"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/normal"
+                    android:textSize="18sp"
+                    android:theme="@style/CustomRadioButton3" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_15"
+                android:layout_marginBottom="@dimen/layout_15"
+                android:backgroundTint="@color/bluish"
+                android:onClick="createJob"
+                android:text="@string/create"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.949" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

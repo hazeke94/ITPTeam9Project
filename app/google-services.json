@@ -1,0 +1,109 @@
+{
+  "project_info": {
+    "project_number": "29320367249",
+    "firebase_url": "https://itpteam9portermanagementsys.firebaseio.com",
+    "project_id": "itpteam9portermanagementsys",
+    "storage_bucket": "itpteam9portermanagementsys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29320367249:android:0d944a724b7a5dde",
+        "android_client_info": {
+          "package_name": "com.example.portermanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29320367249-41g3ndv6k3f9ru55rbc33d5tot4qdkpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.portermanagementsystem",
+            "certificate_hash": "832da121b6d04504351464f595cd9807587964ba"
+          }
+        },
+        {
+          "client_id": "29320367249-ejmfa40n916h2oavje99ld0c07qk8jl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.portermanagementsystem",
+            "certificate_hash": "ba5379feca6f203d2cfa47b6a10122d717e2f34c"
+          }
+        },
+        {
+          "client_id": "29320367249-3hkg39tdb6jk6ealcb41cpso2t6isajk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.portermanagementsystem",
+            "certificate_hash": "8ae409888a2af7844d0476e955dc0663bf5ffc86"
+          }
+        },
+        {
+          "client_id": "29320367249-da9d26jvgeunkuq0vuf44vr5bnml41ki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.portermanagementsystem",
+            "certificate_hash": "414df669603d501287faa62166fa8dbcfe6a29d6"
+          }
+        },
+        {
+          "client_id": "29320367249-inc6u5p0hhl4av22kto50uqkk0hk9pbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.portermanagementsystem",
+            "certificate_hash": "0a82af87e6ff72c871c5d2cdc1c2d34ecec14c00"
+          }
+        },
+        {
+          "client_id": "29320367249-qovf3dhkl9j4b8d1kt9opfv1bf421sdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLJH7_kgAwXshnidM2pbtjm9TtGvY63Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29320367249-qovf3dhkl9j4b8d1kt9opfv1bf421sdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29320367249:android:0468fc1b44e24e0b",
+        "android_client_info": {
+          "package_name": "com.mah.mahcustomauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29320367249-qovf3dhkl9j4b8d1kt9opfv1bf421sdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLJH7_kgAwXshnidM2pbtjm9TtGvY63Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29320367249-qovf3dhkl9j4b8d1kt9opfv1bf421sdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

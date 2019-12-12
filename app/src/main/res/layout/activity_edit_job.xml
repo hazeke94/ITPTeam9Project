@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/layout_15"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:layout_marginTop="@dimen/layout_15"
+            android:text="@string/case_id"
+            android:textSize="@dimen/font_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextCaseID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_photo_camera_black_24dp"
+            android:hint="@string/hint_case_id"
+            android:singleLine="true"
+            android:textSize="@dimen/textInput"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:layout_marginTop="@dimen/layout_space"
+            android:text="@string/description"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_remarks"
+            android:inputType="textPersonName"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:layout_marginTop="@dimen/layout_space"
+            android:text="@string/from"
+            android:textSize="@dimen/font_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/spinnerFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textInput" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:layout_marginTop="@dimen/layout_space"
+            android:text="@string/to"
+            android:textSize="@dimen/font_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/spinnerTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textInput" />
+
+        <TextView
+            android:id="@+id/textViewJobType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_4"
+            android:layout_marginTop="@dimen/layout_space"
+            android:text="@string/job_type"
+            android:textSize="@dimen/font_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerJobType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_35" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJobUrgency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_space"
+            android:checkedButton="@+id/sound"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.708">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_4"
+                android:layout_marginBottom="@dimen/layout_4"
+                android:text="@string/urgency_level"
+                android:textSize="@dimen/font_1" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEmergency"
+                android:layout_width="@dimen/layout_157"
+                android:layout_height="wrap_content"
+                android:text="@string/emergency"
+                android:textSize="@dimen/textInput"
+                android:theme="@style/CustomRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUrgent"
+                android:layout_width="@dimen/layout_157"
+                android:layout_height="wrap_content"
+                android:text="@string/urgent"
+                android:textSize="@dimen/textInput"
+                android:theme="@style/CustomRadioButton2" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNormal"
+                android:layout_width="@dimen/layout_157"
+                android:layout_height="wrap_content"
+                android:text="@string/normal"
+                android:textSize="@dimen/textInput"
+                android:theme="@style/CustomRadioButton3" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_15"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bluish"
+            android:onClick="saveJobDetails"
+            android:text="@string/save"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/buttonTextSize"
+            tools:layout_editor_absoluteX="@dimen/layout_15"
+            tools:layout_editor_absoluteY="459dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

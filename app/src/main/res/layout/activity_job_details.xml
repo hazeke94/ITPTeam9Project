@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/layout_18">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_15"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_7"
+                        android:layout_marginRight="@dimen/layout_7"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageViewJobType"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="0.05"
+                                android:scaleType="fitStart" />
+
+                            <TextView
+                                android:id="@+id/textViewCaseID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center_vertical"
+                                android:paddingLeft="@dimen/layout_4"
+                                android:text="@string/case_id"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="@dimen/textHead"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/imageViewEdit"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.1"
+                                android:clickable="true"
+                                android:onClick="editDetail"
+                                app:srcCompat="@drawable/ic_edit_black_24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/descriptionLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="@dimen/layout_65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:scaleType="fitStart" />
+
+                            <TextView
+                                android:id="@+id/textViewDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="@dimen/impt_font" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layout_5"
+                            android:layout_marginBottom="@dimen/layout_5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/layout_65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:scaleType="fitStart"
+                                app:srcCompat="@drawable/ic_radio_button_checked_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/textViewFrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/from_location"
+                                android:textSize="@dimen/impt_font" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/layout_5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/layout_65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:scaleType="fitStart"
+                                app:srcCompat="@drawable/ic_place_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/textViewTo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/to_location"
+                                android:textSize="@dimen/impt_font" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/layout_15"
+                        android:layout_marginBottom="@dimen/layout_15"
+                        android:background="@android:color/black"
+                        android:paddingTop="81dp"
+                        android:paddingBottom="@dimen/layout_18"
+                        tools:layout_editor_absoluteX="-6dp" />
+                    <!--Start Of Created Time-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewCreated"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/background_light"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/created_time"
+                                android:textSize="@dimen/impt_font"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewCreatedTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/empty"
+                                android:textSize="@dimen/impt_font" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/layout_5"
+                                android:layout_marginBottom="@dimen/layout_5"
+                                android:background="@color/pink" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp" />
+
+                                <TextView
+                                    android:id="@+id/textViewCreatedBy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="@dimen/impt_font" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--End Of Created Time-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/white" />
+                    <!--Start Of Acknowledge Time-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewAck"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/layout_5"
+                            android:background="@android:color/background_light"
+                            android:orientation="vertical"
+                            android:padding="@dimen/layout_5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/acknowledge_time"
+                                android:textSize="@dimen/impt_font"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewAcknowledgeTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/empty"
+                                android:textSize="@dimen/impt_font" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/pink" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp" />
+
+                                <TextView
+                                    android:id="@+id/textViewAcknowledgeBy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="@dimen/impt_font" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--End Of Acknowledged Time-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/white" />
+                    <!--Start Of Start Time-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewReached"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/layout_5"
+                            android:background="@android:color/background_light"
+                            android:orientation="vertical"
+                            android:padding="@dimen/layout_5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/start_time"
+                                android:textSize="@dimen/impt_font"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/empty"
+                                android:textSize="@dimen/impt_font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--End Of Start Time-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/white" />
+                    <!--Start Of Pick Up Layout-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewPickUp"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/layout_5"
+                            android:background="@android:color/background_light"
+                            android:orientation="vertical"
+                            android:padding="@dimen/layout_5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pick_up"
+                                android:textSize="@dimen/impt_font"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewPickUpTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/empty"
+                                android:textSize="@dimen/impt_font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--End Of Pick Up Layout-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/white" />
+                    <!--Start Of Arrival Time-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewArrived"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/layout_5"
+                            android:background="@android:color/background_light"
+                            android:orientation="vertical"
+                            android:padding="@dimen/layout_5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/arrival"
+                                android:textSize="@dimen/impt_font"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewArrivalTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/empty"
+                                android:textSize="@dimen/impt_font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--End Of Arrival Time-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/white" />
+                    <!--Start Of Complete Time-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewCompleted"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/layout_5"
+                            android:background="@android:color/background_light"
+                            android:orientation="vertical"
+                            android:padding="@dimen/layout_5">
+
+                            <TextView
+                                android:id="@+id/textViewComplete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/complete_time"
+                                android:textSize="@dimen/impt_font"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewCompleteTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/empty"
+                                android:textSize="@dimen/impt_font" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/layout_5"
+                                android:layout_marginBottom="@dimen/layout_5"
+                                android:background="@color/pink" />
+
+                            <TextView
+                                android:id="@+id/RemarkTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Remark"
+                                android:textSize="@dimen/impt_font"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewRemark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/empty"
+                                android:textSize="@dimen/impt_font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

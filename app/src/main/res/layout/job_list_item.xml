@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    app:dragFromEdge="right">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_15"
+            android:layout_marginTop="@dimen/layout_5"
+            android:layout_marginRight="@dimen/layout_15"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/cardGrey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_5"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.9"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <ImageView
+                                    android:id="@+id/jobTypeIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter" />
+
+                                <TextView
+                                    android:id="@+id/textViewCaseID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.1"
+                                    android:gravity="center|start"
+                                    android:textColor="@android:color/background_light"
+                                    android:textSize="@dimen/font_1"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewAssigned"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitCenter"
+                                    android:visibility="visible"
+                                    app:srcCompat="@drawable/ic_porter" />
+
+                                <TextView
+                                    android:id="@+id/textViewAssigned"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:gravity="center|start"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/ic_hourglass" />
+
+                                <TextView
+                                    android:id="@+id/textViewCreatedTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:textSize="@dimen/impt_font" />
+
+                                <ImageView
+                                    android:id="@+id/startTimeIV"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/ic_hourglass_half" />
+
+                                <TextView
+                                    android:id="@+id/textViewStartTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:textSize="@dimen/impt_font" />
+
+                                <ImageView
+                                    android:id="@+id/completedTimeIV"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/ic_end" />
+
+                                <TextView
+                                    android:id="@+id/textViewCompletedTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:textSize="@dimen/impt_font" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view3"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_weight="0.5" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/dateImageView"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/ic_date_range_white_24dp" />
+
+                                <TextView
+                                    android:id="@+id/textViewDateCreated"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:textSize="@dimen/impt_font" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/buttonAssign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_weight="0.1"
+                            android:background="@color/grey"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/ic_assign_black_24dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+</RelativeLayout>

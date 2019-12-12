@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StaffDetailActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewEmpName"
+                    android:layout_marginTop="@dimen/layout_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_4"
+                    android:text="@string/staffName"
+                    android:textSize="@dimen/textTitle" />
+
+                <EditText
+                    android:id="@+id/textViewStaffName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="@string/hint_staff_name"
+                    android:textSize="@dimen/textInput" />
+
+                <TextView
+                    android:id="@+id/textViewStaffRole"
+                    android:layout_marginTop="@dimen/layout_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_4"
+                    android:layout_marginBottom="@dimen/layout_4"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/staffRole"
+                    android:textSize="@dimen/textTitle" />
+
+                <Spinner
+                    android:id="@+id/spinnerRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <!--Update button-->
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_15"
+                    android:layout_marginBottom="@dimen/layout_15"
+                    android:backgroundTint="@color/bluish"
+                    android:onClick="updateStaff"
+                    android:text="@string/save"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="@dimen/buttonTextSize"
+                    tools:layout_editor_absoluteX="@dimen/layout_15"
+                    tools:layout_editor_absoluteY="459dp" />
+            </LinearLayout>
+        </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

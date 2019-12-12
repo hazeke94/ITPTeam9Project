@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_15"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:text="@string/staff_id"
+                android:id="@+id/textViewStaffID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_4"
+                android:textSize="@dimen/textTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextStaffID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_photo_camera_black_24dp"
+                android:onClick="iconBack"
+                android:singleLine="true"
+                android:textSize="@dimen/textInput"
+                android:hint="@string/hint_staff_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:imeOptions="actionDone"/>
+
+            <TextView
+                android:id="@+id/textViewEmpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_4"
+                android:layout_marginTop="@dimen/layout_25"
+                android:text="@string/staffName"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextStaffName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_staff_name"
+                android:inputType="textPersonName"
+                android:imeOptions="actionDone"/>
+
+            <TextView
+                android:id="@+id/textViewEmpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_4"
+                android:layout_marginTop="@dimen/layout_25"
+                android:text="@string/staffEmail"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextStaffEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_staff_email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"/>
+
+            <TextView
+                android:id="@+id/textViewEmpContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_4"
+                android:layout_marginTop="@dimen/layout_25"
+                android:text="@string/staffContact"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextStaffContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_staff_contact"
+                android:imeOptions="actionDone"
+                android:inputType="textPhonetic" />
+
+            <TextView
+                android:id="@+id/textViewEmpRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_4"
+                android:layout_marginTop="@dimen/layout_25"
+                android:text="@string/staffRole"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerStaffRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/textInput"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_25">
+
+                <TextView
+                    android:id="@+id/genderTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_4"
+                    android:layout_marginTop="@dimen/layout_4"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/gender"
+                    android:textSize="@dimen/textTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="116dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_Male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genderMale"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_Female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genderFemale"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnCreateUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_15"
+                android:layout_marginBottom="@dimen/layout_15"
+                android:backgroundTint="@color/bluish"
+                android:onClick="createUser"
+                android:text="@string/create"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.949" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

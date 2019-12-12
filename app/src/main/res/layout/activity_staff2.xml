@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StaffActivity"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewOngoing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addStaff"
+                app:cardBackgroundColor="@color/mint"
+                app:cardCornerRadius="20dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_15">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_porter" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Add Staff"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="@dimen/font_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewQueue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/golden"
+                android:onClick="manageStaff"
+                app:cardCornerRadius="20dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_15">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_queue" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Update/Remove Staff"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="@dimen/font_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewPorterAvail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="porterAvailable"
+                app:cardBackgroundColor="@color/bluish"
+                app:cardCornerRadius="20dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="porterReport"
+                app:cardBackgroundColor="@color/pink"
+                app:cardCornerRadius="20dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="recept_history"
+                app:cardBackgroundColor="@color/brown"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="staff_mgmt"
+                app:cardBackgroundColor="@color/cardGrey"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_15"
+        android:layout_marginEnd="@dimen/layout_15"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

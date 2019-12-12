@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_15"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_15"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="@dimen/layout_70"
+                            android:layout_height="@dimen/layout_70"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/ic_lens_black_24dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_detail"
+                        android:textSize="@dimen/textPrestige" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_70"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <ImageView
+                            android:layout_width="@dimen/layout_70"
+                            android:layout_height="@dimen/layout_70"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/ic_lens_yellow_24dp" />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/job_type"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary" />
+
+                        <ImageView
+                            android:layout_width="@dimen/layout_70"
+                            android:layout_height="@dimen/layout_70"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/ic_lens_black_24dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/jobUrgency"
+                        android:textSize="@dimen/textPrestige" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewJobType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_4"
+                android:layout_marginTop="@dimen/textUser"
+                android:text="@string/type_of_job"
+                android:textSize="@dimen/textTitle" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupAdmission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/sound"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.409">
+
+
+                <TextView
+                    android:id="@+id/adhocTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_4"
+                    android:layout_marginTop="@dimen/layout_4"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/adhoc"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/textTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="116dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_xray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xray"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_Labs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Labs"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_discharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discharge"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/document"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_transport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transport"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/admissionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_4"
+                    android:layout_marginTop="@dimen/layout_4"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/admission"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/textTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="116dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_inpatientPorter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inpatient"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_outpatientPorter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/outpatient"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_maternityPorter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/maternity"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroupAdHoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_15">
+
+                <TextView
+                    android:id="@+id/adhocTv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_4"
+                    android:layout_marginTop="@dimen/layout_4"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/adhoc"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/textTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="116dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_xray1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xray"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_Labs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Labs"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_discharge1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discharge"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_document1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/document"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_transport1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transport"
+                    android:textSize="18sp" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_15"
+                android:layout_marginBottom="@dimen/layout_15"
+                android:backgroundTint="@color/bluish"
+                android:onClick="nextPage"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.951"
+                tools:layout_editor_absoluteY="633dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
